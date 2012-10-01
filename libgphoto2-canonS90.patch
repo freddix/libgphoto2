@@ -1,0 +1,12 @@
+diff -aurN libgphoto2-2.4.8.orig/camlibs/ptp2/library.c libgphoto2-2.4.8/camlibs/ptp2/library.c
+--- libgphoto2-2.4.8.orig/camlibs/ptp2/library.c	2010-02-27 13:16:08.000000000 +0100
++++ libgphoto2-2.4.8/camlibs/ptp2/library.c	2010-02-27 13:31:08.000000000 +0100
+@@ -833,6 +833,8 @@
+ 	{"Canon:PowerShot A410 (PTP mode)",     0x04a9, 0x30f9, PTPBUG_DELETE_SENDS_EVENT},
+ 	/* http://sourceforge.net/tracker/index.php?func=detail&aid=1411976&group_id=8874&atid=358874 */
+ 	{"Canon:PowerShot S80 (PTP mode)",      0x04a9, 0x30fa, PTPBUG_DELETE_SENDS_EVENT|PTP_CAP|PTP_CAP_PREVIEW},
++	/* Canon PowerShot S90 */
++	{"Canon:PowerShot S90 (PTP mode)",      0x04a9, 0x31e1, 0},
+ 	/* A620, Tom Roelz */
+ 	{"Canon:PowerShot A620 (PTP mode)",     0x04a9, 0x30fc, PTPBUG_DELETE_SENDS_EVENT|PTP_CAP|PTP_CAP_PREVIEW},
+ 	/* A610, Andriy Kulchytskyy <whoops@ukrtop.com> */

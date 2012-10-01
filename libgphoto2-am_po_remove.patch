@@ -1,0 +1,22 @@
+diff -aurN libgphoto2-2.4.1.orig/configure.ac libgphoto2-2.4.1/configure.ac
+--- libgphoto2-2.4.1.orig/configure.ac	2008-04-09 07:18:16.000000000 +0200
++++ libgphoto2-2.4.1/configure.ac	2008-04-09 07:18:40.000000000 +0200
+@@ -226,7 +226,6 @@
+ GP_GETTEXT_HACK([${PACKAGE}-${LIBGPHOTO2_CURRENT_MIN}],[The gPhoto Team],[${MAIL_GPHOTO_TRANSLATION}])
+ AM_GNU_GETTEXT_VERSION([0.14.1])
+ AM_GNU_GETTEXT([external])
+-AM_PO_SUBDIRS()
+ AM_ICONV()
+ GP_GETTEXT_FLAGS()
+ 
+diff -aurN libgphoto2-2.4.1.orig/libgphoto2_port/configure.ac libgphoto2-2.4.1/libgphoto2_port/configure.ac
+--- libgphoto2-2.4.1.orig/libgphoto2_port/configure.ac	2008-04-09 07:18:16.000000000 +0200
++++ libgphoto2-2.4.1/libgphoto2_port/configure.ac	2008-04-09 07:18:54.000000000 +0200
+@@ -119,7 +119,6 @@
+ ALL_LINGUAS="cs da de fr es eu it ja nl nb pl pt_BR ru sl sv uk vi zh_CN zh_TW"
+ AM_GNU_GETTEXT_VERSION([0.14.1])
+ AM_GNU_GETTEXT([external])
+-AM_PO_SUBDIRS()
+ AM_ICONV()
+ GP_GETTEXT_FLAGS()
+ 
