@@ -1,11 +1,11 @@
 Summary:	Libraries for digital cameras
 Name:		libgphoto2
-Version:	2.4.14
-Release:	3
+Version:	2.5.1.1
+Release:	1
 License:	LGPL
 Group:		Applications
-Source0:	http://downloads.sourceforge.net/gphoto/%{name}-%{version}.tar.gz
-# Source0-md5:	492bec63dd610906c3a28030be77e650
+Source0:	http://downloads.sourceforge.net/gphoto/%{name}-%{version}.tar.bz2
+# Source0-md5:	b3e5e27f89bef03425e0c2bbab3544bb
 Patch0:		%{name}-canonS90.patch
 URL:		http://www.gphoto.org/
 BuildRequires:	autoconf
@@ -147,7 +147,7 @@ umask 022
 %defattr(644,root,root,755)
 %doc AUTHORS ChangeLog NEWS README TESTERS docs/*
 %attr(755,root,root) %ghost %{_libdir}/libgphoto2.so.?
-%attr(755,root,root) %ghost %{_libdir}/libgphoto2_port.so.?
+%attr(755,root,root) %ghost %{_libdir}/libgphoto2_port.so.??
 %attr(755,root,root) %{_libdir}/libgphoto2.so.*.*.*
 %attr(755,root,root) %{_libdir}/libgphoto2_port.so.*.*.*
 
@@ -178,7 +178,7 @@ umask 022
 %attr(755,root,root) %{_libdir}/libgphoto2/print-camera-list
 
 # udev rules file for libgphoto2 devices
-%ghost /usr/lib/udev/rules.d/40-libgphoto2.rules
+%ghost %{_prefix}/lib/udev/rules.d/40-libgphoto2.rules
 
 %dir %{_datadir}/libgphoto2
 %dir %{_datadir}/libgphoto2/%{version}
