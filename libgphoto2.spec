@@ -1,11 +1,11 @@
 Summary:	Libraries for digital cameras
 Name:		libgphoto2
-Version:	2.5.2
-Release:	2
+Version:	2.5.4
+Release:	1
 License:	LGPL
 Group:		Applications
 Source0:	http://downloads.sourceforge.net/gphoto/%{name}-%{version}.tar.bz2
-# Source0-md5:	28e0c0d449f80917fb3f79bdefbbe0ec
+# Source0-md5:	4f549a8600228a27f547d47ca1a97f09
 Patch0:		%{name}-canonS90.patch
 URL:		http://www.gphoto.org/
 BuildRequires:	autoconf
