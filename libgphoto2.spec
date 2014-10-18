@@ -1,7 +1,8 @@
+# based on PLD Linux spec git://git.pld-linux.org/packages/.git
 Summary:	Libraries for digital cameras
 Name:		libgphoto2
 Version:	2.5.4
-Release:	1
+Release:	2
 License:	LGPL
 Group:		Applications
 Source0:	http://downloads.sourceforge.net/gphoto/%{name}-%{version}.tar.bz2
@@ -16,7 +17,7 @@ BuildRequires:	libexif-devel
 BuildRequires:	libjpeg-devel
 BuildRequires:	libltdl-devel
 BuildRequires:	libtool
-BuildRequires:	libusbx-devel
+BuildRequires:	libusb-devel
 BuildRequires:	pkg-config
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
